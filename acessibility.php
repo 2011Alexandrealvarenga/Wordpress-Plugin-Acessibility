@@ -16,4 +16,4 @@
 define('WP_ACESSIBILITY_PLUGIN_URL', __FILE__);
 include('enqueue.php');
 
-add_action('admin_enqueue_scripts', 'wp_acessibility_enqueue_css');
+add_action('wp_enqueue_scripts', 'wp_acessibility_enqueue_css');
