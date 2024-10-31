@@ -17,6 +17,17 @@ html body #barraAcessibilidade #menuAcessibilidade{
     border: 1px solid #ddd;
     background-color: #fff;
 }
+#barraAcessibilidade #menuAcessibilidade{
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+#menuAcessibilidade{
+    display: none;
+    border: 1px solid yellow;        
+}
+#menuAcessibilidade a{
+    margin-bottom: 0px;
+}
 
 #menuAcessibilidade a{
     margin-bottom: 0px;
@@ -203,3 +214,14 @@ html body #barraAcessibilidade #btnAcessibilidade img{
   .back-link{
       background: yellow!important;
   }
+  #barraAcessibilidade .icon-acessibilidade{width: 16px; margin-right: 8px;}
+  #barraAcessibilidade .iconBranco,
+  #barraAcessibilidade .displayNone{
+  display: none;
+}
+#barraAcessibilidade .displayBlock{
+  display: block;
+}
+  
+.d-flex{display:-ms-flexbox!important;display:flex!important;}
+  /* ////////////////  */

@@ -43,16 +43,7 @@
       listIcons.classList.toggle('display-grid');
   });
 // 
-// inicio - contrast
-  const contrast = document.querySelector('.altocontraste');
-  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, body, div, section, li, ul');
 
-  contrast.addEventListener('click', function() {
-      elements.forEach(element => {
-          element.classList.toggle('contrast-color');
-      });
-  });
-// fim - contrast
 // inicio - destacar link
   const destacarLink = document.querySelector('#highlightLinks');
   const elementLinks = document.querySelectorAll('a');
@@ -64,3 +55,22 @@
       });
   })
 // fim - destacar link
+// inicio - contrast
+// inicio - contrast
+const contrast = document.querySelector('.altocontrasteAcessibilidade');
+const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, body, div, section, li, ul');
+const iconBranco = document.querySelectorAll('.iconBranco');
+const iconPreto = document.querySelectorAll('.iconPreto');
+contrast.addEventListener('click', function() {
+  elements.forEach(element => {
+    element.classList.toggle('contrast-color');
+  });
+  iconBranco.forEach(iBranco => {
+    iBranco.classList.toggle('displayBlock');
+  });
+  iconPreto.forEach(iPreto => {
+    iPreto.classList.toggle('displayNone');
+  });
+
+})
+// fim - contrast
